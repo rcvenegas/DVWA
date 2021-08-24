@@ -1,7 +1,7 @@
 node ('nodo_roberto') {
     stage('Clonacion Repositorio') {
         git branch: 'master',
-            credentialsId: 'githubssh',
+            credentialsId: 'gitHubSsh',
             url: 'git@github.com:rcvenegas/DVWA.git'
 
         sh "ls -lat"
